@@ -150,9 +150,13 @@
     </div>
 
 
-    <div id="f22">me gustaría decir que tengo un final para esta historia, pero, ambos sabemos que apenas estamos comenzando, ¿cierto? no hay cómo acabar si la aventura todavía esta verde. 
+    <div id="f22">
+        Me gustaría decir que tengo un final para esta historia, pero, ambos sabemos que apenas estamos comenzando, ¿cierto? no hay cómo acabar si la aventura todavía esta verde. 
     <br><br>
-    el único final que quiero contigo es uno feliz, dónde termines de leer esto, vengas a mis brazos y me beses. ¿Sería eso mucho pedir? 
+    el único final que quiero contigo hoy es uno feliz, dónde termines de leer esto, vengas a mis brazos y me beses. ¿Sería eso mucho pedir?
+    <br><br>
+    Si no encontre las flores, al menos te entregare estos...
+        <div class="flores">>Tómalos...!</div>
     </div>
 
 
@@ -186,7 +190,7 @@
             animation-fill-mode: forwards; cursor: pointer; color: #f9f9f9;
         }
 
-        .rega, .ojo, .afi, .anillo, .marry, .meme, .meme2, .yes {font: 25px 'VT323', monospace; margin: 10px; opacity: 0;
+        .rega, .ojo, .afi, .anillo, .marry, .meme, .meme2, .yes, .flores {font: 25px 'VT323', monospace; margin: 10px; opacity: 0;
         animation-name: visible;
         animation-duration: 1s; 
         animation-delay: 7s;
@@ -215,7 +219,7 @@
         #f16 {position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px; display: none; align-items: center; justify-content: center; flex-direction: column;}
 
         #f17 {position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; display: none; align-items: center; justify-content: center; flex-direction: column;}
-        .ring {width: 150px; height: 150px;  background: url(https://i.imgur.com/oEs8TdL.png); background-size: cover;}
+        .ring {width: 150px; height: 150px;  background: url(album.png); background-size: cover;}
         .ichigo {width: 200px; height: 200px; background: url(https://i.imgur.com/hGY3pGX.png); background-size: cover;}
 
         #f18 {position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px; background: #111; display: none;}
@@ -384,6 +388,10 @@
         $('#f21').css('display', 'none');
         $('#f22').css('display', 'flex');
         });
+
+        $(".flores").on("click",function(){
+            location.href = "flores.html"
+        })
 
         let audio = document.getElementById('reproductor');
         
